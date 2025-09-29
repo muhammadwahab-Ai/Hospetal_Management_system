@@ -8,7 +8,7 @@ LoginBtn.addEventListener("click", function (event) {
     alert("Failed the input");
   } else if (username.value === "wahab" && password.value === "@123") {
     setTimeout(() => {
-    window.location.href = "index.html"
+    window.location.href = "hospetal-M-S.html"
         
     }, 1000);
   }
