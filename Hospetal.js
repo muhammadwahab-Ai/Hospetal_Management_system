@@ -15,11 +15,8 @@ addPatientBtn.addEventListener("click", function () {
 
     if (pname == "" && pAge == "" && pDies == "" && cont == "") {
         alert("Fill all the Feild")
-        return;
+        // return;
     } else {
-
-
-
 
 
         let patient = JSON.parse(localStorage.getItem("patient")) || [];
