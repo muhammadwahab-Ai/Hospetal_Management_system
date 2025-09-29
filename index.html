@@ -4,102 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospetal Management system</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-     <link rel="stylesheet" href="chat.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
-    <div class="patient-section">
-        <h2 id="patient-Head">Patient Details</h2>
-        <input type="text" placeholder="Enter Patient Name" id="patient-Name">
-        <input type="number" placeholder="Enter Patient Age" id="patient-Age">
-        <input type="text" placeholder="Enter Disease" id="patient-Disease">
-        <input type="text" placeholder="contect no" id="contect">
-        <button type="button" id="AddPatient">Add patient</button>
+    <div class="contaienr">
+        <div class="main">
+            <h1 id="title"><i class="fa-solid fa-cart-shopping shopping-icon"></i> Go Shopping</h1>
+            <h3 class="head">Login</h3>
+
+            <label for="username" id="usernamelabel">username</label>
+            <input type="text" placeholder="Enter username" id="username">
+            <br><br>
+            <label for="password" id="passwordlabel">password</label>
+            <input type="password" placeholder="Enter username" id="password">
+            <br><br>
+            <input type="button" value="Login" id="loginBtn">
+
+        </div>
     </div>
+   
 
-    <table id="list">
-        <!-- <tr>
-            <th>p name</th>
-            <th>p Age</th>
-            <th>p Disease</th>
-            <th>p contect</th>
-        </tr> -->
-        <tbody id="table-body">
-        </tbody>
-    </table>
-
-    <br><br>
-    <br><br>
-
-    <!-- Doctor Sectio start -->
-
-
-    <div class="Doctor-Section">
-        <h2 id="patient-Head">Doctor Details</h2>
-        <input type="text" placeholder="Enter Doctor Name" id="Doctor-Name">
-        <input type="text" placeholder="sepecialization" id="sepecialization">
-        <button type="button" id="AddDoctor">Add Doctor</button>
-    </div>
-
-    <table>
-        <!-- <tr>
-            <th>Doctor Name</th>
-            <th>Doctor speciality</th>
-
-        </tr> -->
-        <tbody id="doctor-table">
-        </tbody>
-    </table>
-
-
-    <br><br>
-    <br><br>
-    <!-- Appointment Section start -->
-
-    <div id="Appointment-Section">
-        <h2 id="patient-Head">Appointment Section</h2>
-        <label for="">Patient Name</label>
-        <select name="" id="patientselect"></select>
-        <label for="">Doctor Name</label>
-        <select name="" id="DoctorSelect"></select>
-        <label for="">Appintment Date</label>
-        <input type="date" id="Currentdate">
-        <button id="bookAppointBtn">Book Appointment</button>
-    </div>
-    <br><br>
-    <br><br>
-
-
-    <div id="BillSection">
-           <h2 id="patient-Head">Bill Details</h2>
-           <!-- <button type="button" id="printBill">Print Bill</button> -->
-           <table  >
-        <tr id="billBody">
-            <th>patient NAME</th>
-        
-        </tr>
-         <tr id="Dcotor_Name">
-            <th>Doctor NAME</th>
-        
-        </tr>
-         <tr id="billDate">
-            <th>Appointment Date</th>
-            
-        
-        </tr>
-         <tr id="payment">
-            <th>  Bill</th>
-        
-        </tr>
-    </table>
-    </div>
-
-    
-
-
-    <script src="script.js"></script>
+    <script src="LoginPage.js"></script>
 </body>
 
 </html>

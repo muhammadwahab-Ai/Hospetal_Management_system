@@ -92,7 +92,7 @@ tr:nth-child(even) {
     background-color: powderblue;
     border: none;
     margin-left: 30px; */
-     border-radius: 10px;
+     /* border-radius: 10px;
     font-family: calibri;
     font-weight: bolder;
 }
@@ -143,4 +143,4 @@ input[placeholder] {
     border-right: 2px solid purple;
 
 
-} 
+}  */
