@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: calibri, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f9fa;
+    padding: 10px;
+}
+
+/* Common Section Styles */
+.patient-section,
+.Doctor-Section,
+#Appointment-Section,
+#BillSection {
+    width: 65%;
+    margin: 20px auto;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 15px;
+    border-left: 3px solid purple;
+    border-right: 3px solid purple;
+    transition: 0.3s;
+}
+
+.patient-section:hover,
+.Doctor-Section:hover,
+#Appointment-Section:hover,
+#BillSection:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+#patient-Head,
+#doctor-Head,
+#appointment-Head,
+#bill-Head {
+    color: purple;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+#patient-Name,
+#patient-Age,
+#contect,
+#patient-Disease,
+#Doctor-Name,
+#sepecialization,
+input[type="date"],
+select {
+    width: 180px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding-left: 10px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+input[placeholder] {
+    color: gray;
+}
+
+/* Buttons (Global) */
+#AddPatient,
+#AddDoctor,
+#bookAppointBtn,
+#showAppointmentsBtn,
+#printBillBtn {
+    width: 140px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin: 10px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#AddPatient:hover,
+#AddDoctor:hover,
+#bookAppointBtn:hover,
+#showAppointmentsBtn:hover,
+#printBillBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Appointment buttons alignment */
+.appointment-actions {
+    display: flex;
+    justify-content: center;
+    /* center buttons horizontally */
+    margin-top: 15px;
+    gap: 15px;
+}
+
+/* Tables */
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 15px auto;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background: #e9ecef;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ----------- Responsive ----------- */
+@media screen and (max-width: 992px) {
+
+    .patient-section,
+    .Doctor-Section,
+    #Appointment-Section,
+    #BillSection {
+        width: 85%;
+        padding: 12px;
+    }
+
+    #patient-Name,
+    #patient-Age,
+    #contect,
+    #patient-Disease,
+    #Doctor-Name,
+    #sepecialization,
+    input[type="date"],
+    select {
+        width: 45%;
+    }
+
+    #AddPatient,
+    #AddDoctor,
+    #bookAppointBtn,
+    #showAppointmentsBtn,
+    #printBillBtn {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .patient-section,
+    .Doctor-Section,
+    #Appointment-Section,
+    #BillSection {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #patient-Name,
+    #patient-Age,
+    #contect,
+    #patient-Disease,
+    #Doctor-Name,
+    #sepecialization,
+    input[type="date"],
+    select {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    #AddPatient,
+    #AddDoctor,
+    #bookAppointBtn,
+    #showAppointmentsBtn,
+    #printBillBtn {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    td,
+    th {
+        padding: 8px;
+    }
+
+    .appointment-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}

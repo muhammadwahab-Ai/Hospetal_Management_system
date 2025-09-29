@@ -1,0 +1,146 @@
+ /* *{
+margin: 0;
+padding: 0;
+font-family: calibri;
+box-sizing: border-box;
+}
+
+.patient-section{
+    width: 65%;
+    height: 100px;
+    margin: auto;
+    background-color:gainsboro;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    border-left: 2px solid purple;
+    border-right: 2px solid purple;
+
+   
+    
+}
+#patient-Head{
+    color: purple;
+    font-family: calibri;
+    font-weight: bolder;
+    text-align: center;
+
+}
+#patient-Name, #patient-Age,#contect, #patient-Disease  {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+input[placeholder] {
+    color: gray;
+    padding-left: 10px;
+}
+#AddPatient{
+    width: 100px;
+    height: 40px;
+    background-color: powderblue;
+    border: none;
+     margin-left: 30px; 
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bolder;
+} 
+
+ 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.Doctor-Section{
+     width: 65%;
+    height: 100px;
+    margin: auto;
+    background-color:gainsboro;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    border-left: 2px solid purple;
+    border-right: 2px solid purple;
+
+
+}
+#Doctor-Name, #sepecialization{
+        width: 35%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#AddDoctor{
+    width: 100px;
+    height: 40px;
+    background-color: powderblue;
+    border: none;
+    margin-left: 30px; */
+     border-radius: 10px;
+    font-family: calibri;
+    font-weight: bolder;
+}
+
+input[placeholder] {
+    color: gray;
+    padding-left: 10px;
+}
+
+#Appointment-Section{
+     width: 65%;
+    height: 100px;
+    margin: auto;
+    background-color:gainsboro;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    border-left: 2px solid purple;
+    border-right: 2px solid purple;
+
+
+}
+
+#bookAppointBtn{
+      width: 150px;
+    height: 40px;
+    background-color: powderblue;
+    border: none;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+
+
+
+#BillSection{
+
+    max-height: auto;
+        width: 65%;
+    margin: auto;
+    background-color:gainsboro;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    border-left: 2px solid purple;
+    border-right: 2px solid purple;
+
+
+} 
