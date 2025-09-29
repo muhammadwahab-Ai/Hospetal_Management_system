@@ -159,10 +159,6 @@ BookAppintmentBtn.addEventListener("click", function () {
     row.innerHTML = "1500";
     payment.appendChild(row)
 
-
-
-
-
 })
 
 

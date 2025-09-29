@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Calibri, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contaienr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 380px;
+  min-height: 420px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.main:hover {
+  transform: translateY(-5px);
+}
+
+.head {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2193b0;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #2193b0;
+  box-shadow: 0 0 5px rgba(33, 147, 176, 0.5);
+  outline: none;
+}
+
+#loginBtn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#loginBtn:hover {
+  background: linear-gradient(135deg, #1b7a91, #57c2d6);
+  transform: scale(1.02);
+}
+
+#loginBtn:active {
+  transform: scale(0.98);
+}
+
+.extra-links {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.extra-links a {
+  color: #2193b0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.extra-links a:hover {
+  color: #17657a;
+}
+
+/* ------------------- Cart Panel ------------------- */
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -400px; /* hidden initially */
+  width: 350px;
+  max-width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.4s ease;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.cart-panel.active {
+  right: 0;
+}
+
+#cartToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: orange;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1100;
+}
+
+/* ------------------- Responsive ------------------- */
+@media (max-width: 768px) {
+  .main {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .head {
+    font-size: 20px;
+  }
+
+  input {
+    height: 40px;
+    font-size: 13px;
+  }
+
+  #loginBtn {
+    height: 42px;
+    font-size: 14px;
+  }
+
+  #cartToggle {
+    top: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .cart-panel {
+    width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .head {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  #loginBtn {
+    font-size: 13px;
+  }
+
+  #cartToggle {
+    top: 10px;
+    right: 10px;
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .cart-panel {
+    width: 100%; /* full screen slide-in on mobile */
+  }
+}
